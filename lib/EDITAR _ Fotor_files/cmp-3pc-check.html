@@ -1,0 +1,24 @@
+
+<!-- saved from url=(0064)https://static.quantcast.mgr.consensu.org/v14/cmp-3pc-check.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<script>
+  // set a distinct-valued cookie
+  var cookieSetValue = "_cmpQc3pChkKey="+Date.now();
+  document.cookie = cookieSetValue + "; path=/";
+
+  try {
+    if(document.cookie.indexOf(cookieSetValue) != -1) {
+      window.parent.postMessage("3PC_check:supported","*");
+    }
+    else {
+      window.parent.postMessage("3PC_check:unsupported","*");
+    }
+  } catch(e) {
+    console.error("error in 3pc-check", e);
+    window.parent.postMessage("3PC_check:unsupported","*");
+  }
+</script>
+</head>
+<body>
+
+</body></html>
