@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #9A87C2;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -586,6 +586,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Subscribe Section
 --------------------------------*/
+
 #subscribe {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/featured_ux.jpg) fixed center center;
   background-size: cover;
@@ -596,6 +597,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
+  text-align: center;
 }
 
 #subscribe .subscribe-text {
@@ -623,14 +625,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #subscribe .subscribe-btn:hover {
-  background: #9A87C2
-  ;
-  border: 2px solid #9A87C2
-  ;
+  background: #9A87C2;
+  border: 2px solid #9A87C2;
 }
+
+.titulo{
+  margin-top: 40px
+}
+
+.herramientas{
+  width: 150%
+}
+
 
 /* Portfolio Section
 --------------------------------*/
+
 #portfolio {
   background: #fff;
   padding: 80px 0;
@@ -686,122 +696,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   transform: translate3d(0, 0, 0);
 }
 
-/* Testimonials Section
---------------------------------*/
-#testimonials {
-  background: #f6f6f6;
-  padding: 80px 0;
-}
-
-#testimonials .profile {
-  text-align: center;
-}
-
-#testimonials .profile .pic {
-  border-radius: 50%;
-  border: 6px solid #fff;
-  margin-bottom: 15px;
-  overflow: hidden;
-  height: 260px;
-  width: 260px;
-}
-
-#testimonials .profile .pic img {
-  max-width: 100%;
-}
-
-#testimonials .profile h4 {
-  font-weight: 700;
-  color: #9A87C2
-  ;
-  margin-bottom: 5px;
-}
-
-#testimonials .profile span {
-  color: #333333;
-}
-
-#testimonials .quote {
-  position: relative;
-  background: #fff;
-  padding: 60px;
-  margin-top: 40px;
-  font-size: 16px;
-  font-style: italic;
-  border-radius: 5px;
-}
-
-#testimonials .quote b {
-  display: inline-block;
-  font-size: 22px;
-  left: -9px;
-  position: relative;
-  top: -8px;
-}
-
-#testimonials .quote small {
-  display: inline-block;
-  right: -9px;
-  position: relative;
-  top: 4px;
-}
-
-/* Team Section
---------------------------------*/
-#team {
-  background: #fff;
-  padding: 80px 0 60px 0;
-}
-
-#team .member {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#team .member .pic {
-  margin-bottom: 15px;
-  overflow: hidden;
-  height: 260px;
-}
-
-#team .member .pic img {
-  max-width: 100%;
-}
-
-#team .member h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-}
-
-#team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-}
-
-#team .member .social {
-  margin-top: 15px;
-}
-
-#team .member .social a {
-  color: #b3b3b3;
-}
-
-#team .member .social a:hover {
-  color: #9A87C2
-  ;
-}
-
-#team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
 /* Contact Section
 --------------------------------*/
 
 #contact {
-  padding: 60px 0;
+  padding: 100px 0;
 }
 
 #contact .contact-info {
@@ -824,11 +723,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .contact-info h3 {
   font-size: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   font-weight: bold;
   text-transform: uppercase;
   color: #999;
 }
+
+/* #contact h3{
+  margin-top: 300px
+} */
 
 #contact .contact-info a {
   color: #000;
